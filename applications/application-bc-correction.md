@@ -9,9 +9,9 @@ parent: Applications
 # 1. Primary Document
 
 ## 1.1. Introduction 
-This document details the Governance Framework (GF) for [BC Corrections](https://www2.gov.bc.ca/gov/content/justice/criminal-justice/corrections) as an actor involved in the verification of verifiable credentials (VC) with the mobile verifier in BC Wallet.
+This document details the Governance Framework (GF) for [BC Corrections](https://www2.gov.bc.ca/gov/content/justice/criminal-justice/corrections) as an actor involved in [verifiable credential](https://www.w3.org/TR/vc-data-model/#abstract) exchanges. 
 
-Verifiable credentials will allow Corrections Reception Team Members to be more confident and secure in allowing individuals gaining access to Correctional Centres. 
+Verifiable credentials will allow BC Corrections to be more confident and secure in delivering services to individuals. 
 
 ## 1.2. Terminology and Notation 
 
@@ -28,6 +28,7 @@ Machine-Testable Requirements | Requirements in which compliance can be verified
 Human-Auditable Requirements | Requirements in which compliance can only be verified by an audit of people, processes, and procedures.
 Policies | Human-Auditable Requirements written using standard conformance terminology. The Policies used in the Governance Framework will use the standard terminology detailed in RFC 2119 keywords. Note that all RFC 2119 keywords have weight from an auditing perspective. An implementer MUST explain why a SHOULD or RECOMMENDED requirement was not implemented and SHOULD explain why a MAY requirement was implemented.
 Specifications | A document containing any combination of Machine-Testable Requirements and Human-Auditable Requirements needed to produce technical interoperability.
+BC Corrections Staff | A person employed by BC Corrections
 
 ## 1.2. Governing Authority
 BC Corrections is the Governing Authority responsible for this Governance Framework. The contact information for BC Corrections during the pilot phase of development is:
@@ -57,7 +58,7 @@ Please reference the [Basic principles of Canadian criminal law](https://www2.go
 
 
 ## General Requirements
-A Corrections Reception Team Member must be able to verify with confidence a person's qualitications through verifiable credential exchanges.
+A BC Corrections Staff must be able to verify with confidence a person's qualitications through verifiable credential exchanges.
 
 # 2. Controlled Documents
 ## 2.1 Risk Assessment
@@ -65,8 +66,8 @@ TBD
 ### 2.1.1 General Risks
 Number | Risk | Description | Probability | Severity | Actions to mitigate
 --- | --- | --- | --- | --- | --- 
-2.1.1.1 | Corrections Reception Team Member uses BC Wallet on their personal device | Corrections Reception Team Member retires and leaves with work data | Low | High | The digital wallet will not retain any proof request data after the interaction is complete. Policy states that that verification must be used with a government issued device.
-2.1.1.2 | Corrections Reception Team Member makes a connection and reuses that connection to send proof requests | Corrections Reception Team Member bypasses the data retention mitigation and proof request data is retained | Low | High | 
+2.1.1.1 | BC Corrections Staff uses BC Wallet on their personal device | BC Corrections Staff retires and leaves with work data | Low | High | The digital wallet will not retain any proof request data after the interaction is complete. Policy states that that verification must be used with a government issued device.
+2.1.1.2 | BC Corrections Staff makes a connection and reuses that connection to send proof requests | BC Corrections Staff bypasses the data retention mitigation and proof request data is retained | Low | High | 
 2.1.1.3 | Device with BC Wallet installed runs out of battery | Mobile verification is inaccessible | High | Medium | Default back to traditional method of verification. Have a back-up mobile device.
 2.1.1.4 | Device with BC Wallet installed malfunctions | Mobile verifier is inaccessible | Low | Medium | Default back to traditional method of verification. Have back-up phone
 2.1.1.5 | WiFi of Correction Centre is offline | Mobile verifier is inaccessible | Medium | Medium | Default back to traditional method of verification
@@ -86,9 +87,9 @@ Number | Requirements | Notes
 2.2.2 | Mobile verification will be done using BC Wallet | To avoid the use of a personal device.
 2.2.3 | Support regarding the use of BC Wallet will be addressed by DITP | 
 2.2.4 | Support regarding the verification processes will be addressed by BC Corrections
-2.2.5 | A Corrections Reception team member will not add an individual as a Contact on the shared mobile devices in BC Wallet | Adding a contact will circumvent the data retention mitigation and data of interactions between the connection will be retained.
+2.2.5 | A BC Corrections Staff will not add an individual as a Contact on the shared mobile devices in BC Wallet | Adding a contact will circumvent the data retention mitigation and data of interactions between the connection will be retained.
 2.2.6 | An individual will not add the shared mobile devices used by a Correction Reception team member as a Contact | Adding a contact will circumvent the data retention mitigation and data of interactions between the connection will be retained.
-2.2.7 | Any individuals who add the shared mobile devices used by a Corrections Reception team member will be removed as a Contact from the shared mobile device | Removing contacts from BC Wallet deletes the connection
+2.2.7 | Any individuals who add the shared mobile devices used by a BC Corrections Staff will be removed as a Contact from the shared mobile device | Removing contacts from BC Wallet deletes the connection
 
 ## 2.3 Business Requirements
 TBD
@@ -98,7 +99,7 @@ TBD
 -	The Verifier must use BC Wallet and the mobile verifier feature to verify digital credentials of the holder.
 
 ### 2.3.4 Verification of an Accredited Lawyer from the Law Society of British Columbia
--	When an individual (Holder) identifies their scheduled appointment to access the Corrections Centre, the Corrections Reception team member (Verifier) must communicate the option to use digital credentials for verification. 
+-	When an individual (Holder) identifies their scheduled appointment to access the Corrections Centre, the BC Corrections Staff (Verifier) must communicate the option to use digital credentials for verification. 
 -	When verifying digital credentials, the Verifier must use the tools to present a proof request to the Holder.
 -	The Holder must scan the proof request with their BC Wallet to present their digital credentials.
 
@@ -120,7 +121,7 @@ Number | Requirements | Notes
 2.4.1 | The BC Wallet mobile verifier on the shared mobile device used by BC Corrections will not retain data of any proof requests | 
 2.4.2 | The presentation request will not accept revoked credentials
 2.4.3 | The presentation request will not accept non-production credentials
-2.4.4 | The presentation request will use ephemeral connections
+2.4.4 | The presentation request will use ephemeral connections (a temporary connection that is deleted after the verifiable credential exchange is complete)
 
 ## 2.5 Presentation Request Definition
  ID: TBD
