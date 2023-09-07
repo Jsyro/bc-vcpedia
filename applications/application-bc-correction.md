@@ -35,7 +35,8 @@ BC Corrections is the Governing Authority responsible for this Governance Framew
 Name: Tiffany Wise, Assistant Deputy Warden OCC
 
 ## 1.5 Administoring Authority
-*The party tasked with operating the management of a particular governance framework. The administering authority may or may not be the governing authority. For example, a government may be the governing authority for a governance framework administered by an NGO as the administering authority.*
+BC Corrections is the Adminstoring Authority responsible for this Governance Framework. The contact information for BC Corrections during the pilot phase of development is:
+Name: Tiffany Wise, Assistant Deputy Warden OCC
 
 ## 1.6 Purpose
 The purpose of this governance framework is to describe the rules/policies/procedures for verifiable credential exchanges involving BC Corrections with the open global community. The purpose of the rules is to enable all actors to understand agreed upon standards, terminology and processes that allow the community to interact with MMO in a trusted manner.
@@ -47,15 +48,11 @@ BC Corrections is a participant in an open ecosystem and the focus of this frame
 The objective of this GF is to be transparent in describing the rules/policies/procedures for verifiable credential exchanges involving BC Corrections with the open global community. Participating actors can review this document and acquire their respective information. 
 
 ## Principles
-*This section states the principles by which all members of the trust community agree to abide. It:*
-
-1.	*SHOULD serve as a guide to the development of policies, rules, and other requirements in the GF ("principles guide policies").*
-2.	*SHOULD, if applicable, refer to previously existing principles (whether defined by ToIP or other sources).*
-3.	*SHOULD be referenced (along with any other relevant parts of the GF) in any Legal Agreement so as to help clarify intent.*
-4.	*MUST NOT include requirements (e.g., using capitalized RFC 2119 keywords) for which either human or machine conformance can be directly tested — those MUST be stated as policies or rules elsewhere in the GF.*
-
 Please reference the [Basic principles of Canadian criminal law](https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bcs-criminal-justice-system/understanding-criminal-justice/principles-and-sources-of-criminal-law/basic-principles)
 
+Please reference the [Adult Custody Policy](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/http://docs.openinfo.gov.bc.ca/d26445513a_response_package_jag-2013-00337.pdf)
+
+Please reference the [Appropriate Use Policy](https://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/appropriate-use-policy) 
 
 ## General Requirements
 A BC Corrections Staff must be able to verify with confidence a person's qualitications through verifiable credential exchanges.
@@ -90,6 +87,7 @@ Number | Requirements | Notes
 2.2.5 | A BC Corrections Staff will not add an individual as a Contact on the shared mobile devices in BC Wallet | Adding a contact will circumvent the data retention mitigation and data of interactions between the connection will be retained.
 2.2.6 | An individual will not add the shared mobile devices used by a Correction Reception team member as a Contact | Adding a contact will circumvent the data retention mitigation and data of interactions between the connection will be retained.
 2.2.7 | Any individuals who add the shared mobile devices used by a BC Corrections Staff will be removed as a Contact from the shared mobile device | Removing contacts from BC Wallet deletes the connection
+2.2.8 | BC Corrections Staff are not allowed their personal mobile device at their station | 
 
 ## 2.3 Business Requirements
 TBD
@@ -106,7 +104,7 @@ TBD
 Once the requested information has been sent to the verifier, the verifier must confirm:
 -	The Member Status is Practising
 -	The Member Status Code is PRAC
--	The photo ID matches the Holder.
+-	The Picture matches the Holder.
 -	The Given Names and Family Name from the Person credential matches the Given Name and Surname of the Member card.
 
 ### 2.3.5 Verification of a Holder with name mismatch
@@ -155,8 +153,8 @@ Attribute | Value
 --- | ---
 Given Name | 
 Surname | 
-Member Status | Practising
-Member Status Code | PRAC
+Member Status | 
+Member Status Code | 
 
 PPID is not requested from the Member Card as it is not the actual Member Card number but a proxy specific to the digital credential. The Person credential is only requesting the person’s full name and picture for the purpose of name and picture matching. Other attributes in the Person credential would be irrelevant to this use case. 
 
