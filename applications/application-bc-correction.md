@@ -50,7 +50,7 @@ The objective of this GF is to be transparent in describing the rules/policies/p
 ## Principles
 Please reference the [Basic principles of Canadian criminal law](https://www2.gov.bc.ca/gov/content/justice/criminal-justice/bcs-criminal-justice-system/understanding-criminal-justice/principles-and-sources-of-criminal-law/basic-principles)
 
-Please reference the [Adult Custody Policy](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/http://docs.openinfo.gov.bc.ca/d26445513a_response_package_jag-2013-00337.pdf)
+Please reference the [Adult Custody Policy](https://www2.gov.bc.ca/gov/content/justice/criminal-justice/corrections/about-us/divisions/adult-custody)
 
 Please reference the [Appropriate Use Policy](https://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/appropriate-use-policy) 
 
@@ -59,7 +59,7 @@ A BC Corrections Staff must be able to verify with confidence a person's qualiti
 
 # 2. Controlled Documents
 ## 2.1 Risk Assessment
-TBD 
+ 
 ### 2.1.1 General Risks
 Number | Risk | Description | Probability | Severity | Actions to mitigate
 --- | --- | --- | --- | --- | --- 
@@ -76,7 +76,6 @@ Number | Risk | Description | Probability | Severity | Actions to mitigate
 2.1.2.2 | Individual has their lawyer accreditation revoked | lawyer may be suspended or disbarred due to misconduct | Low | High | Presentation definition requires non-revoked digital credentials 
 
 ## 2.2 Governance Requirements
-TBD
 
 Number | Requirements | Notes
 --- | --- | ---
@@ -90,7 +89,6 @@ Number | Requirements | Notes
 2.2.8 | BC Corrections Staff are not allowed their personal mobile device at their station | 
 
 ## 2.3 Business Requirements
-TBD
 
 ### 2.3.2 Tools
 -	The Verifier must use a shared government issued mobile device to install [BC Wallet](https://www2.gov.bc.ca/gov/content/governments/government-id/bc-wallet/help).
@@ -112,7 +110,6 @@ If the Given names and Surname/Family Names of credentials do not match:
 TBD
 
 ## 2.4 Technical Requirements
-TBD
 
 Number | Requirements | Notes
 --- | --- | ---
