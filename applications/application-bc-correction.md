@@ -119,9 +119,9 @@ Number | Requirements | Notes
 2.4.4 | The presentation request will use ephemeral connections (a temporary connection that is deleted after the verifiable credential exchange is complete)
 
 ## 2.5 Presentation Request Definition
- ID: TBD
- Name: TBD
- Version TBD
+ ID: BC:5:PracticingLawyerAndPhoto:0.0.1:indy
+ 
+ Name: Lawyer Status and Photo
 
 ### Requested Attributes
 Schema Name: Person
