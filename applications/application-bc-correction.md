@@ -107,7 +107,7 @@ Once the requested information has been sent to the verifier, the verifier must 
 
 ### 2.3.5 Verification of a Holder with name mismatch
 If the Given names and Surname/Family Names of credentials do not match: 
-TBD
+- The Holder will need to provide another form of ID with names matching.
 
 ## 2.4 Technical Requirements
 
